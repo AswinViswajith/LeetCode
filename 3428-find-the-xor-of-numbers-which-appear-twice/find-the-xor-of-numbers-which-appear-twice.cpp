@@ -7,12 +7,9 @@ public:
         for(auto i : nums)
         {
             mpp[i]++;
-        }
-        for(auto i : mpp)
-        {
-            if(i.second == 2)
+            if(mpp[i] == 2)
             {
-                x_or = (x_or ^ i.first); 
+                x_or ^= i; 
             }
         }
         return x_or;
