@@ -1,0 +1,23 @@
+class Solution {
+public:
+    bool canAliceWin(vector<int>& nums) {
+        int n = nums.size();
+        int sum1=0,sum2 =0;
+        for(int i=0;i<n;i++)
+        {
+            if(nums[i] < 10)
+            {
+                sum1+=nums[i];
+            }
+            if(nums[i]>=10)
+            {
+                sum2 += nums[i];
+            }
+        }
+        if(sum1 > sum2 || sum1< sum2)
+        {
+            return true;
+        }
+        return false;
+    }
+};
