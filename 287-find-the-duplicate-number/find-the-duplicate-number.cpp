@@ -6,12 +6,9 @@ public:
         for(int i : nums)
         {
             mpp[i]++;
-        }
-        for(auto i : mpp)
-        {
-            if(i.second >= 2)
+            if(mpp[i] >=2)
             {
-                return i.first;
+                return i;
             }
         }
         return {};
