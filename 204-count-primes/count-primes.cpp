@@ -9,7 +9,7 @@ public:
             if(prime[i])
             {
                 count+=1;
-                for(int j=i*2;j<n;j +=i)
+                for(int j=i*2;j<n;j=j+i)
                 {
                     prime[j] = false;
                 }
