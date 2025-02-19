@@ -14,7 +14,6 @@ public:
                 des = 1;
             }
         }
-        
         if(asc == 1 && des == 1)
         {
             return false;
